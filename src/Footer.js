@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className='footer'>
       <div className="bottom">
-        <a href="https://github.com/wodnjs7800/web3rd" target="_blank"><img src="images/github.PNG" /></a>
+        <a href="https://github.com/wodnjs7800/shop/tree/master" target="_blank"><img src="images/github.PNG" /></a>
         <nav>
           <ul>
             <li>신발</li>
