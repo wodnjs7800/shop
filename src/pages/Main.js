@@ -8,14 +8,14 @@ function Main() {
   let navigate = useNavigate()
   return (
     <div className='main'>
-      <img src={`/images/bg/bg2.jpg`} className='main-bg'></img>
+      <img src={`${process.env.PUBLIC_URL}/images/bg/bg2.jpg`} className='main-bg'></img>
       <div className="container">
         <div className="row">
           <div className="col-md-6">
             <button onClick={() => {
               navigate(`/detail/${num}`, { state: { type: "shoes", num: num } })
             }}>
-              <img src={`/images/shoes/shoes${num}.jpg`} width="100%" />
+              <img src={`${process.env.PUBLIC_URL}/images/shoes/shoes${num}.jpg`} width="100%" />
             </button>
             <h4>{shoes[num].title}</h4>
             <p>{shoes[num].content}</p>
@@ -25,7 +25,7 @@ function Main() {
             <button onClick={() => {
               navigate(`/detail/${num+10}`, { state: { type: "clothes", num: num } })
             }}>
-              <img src={`/images/clothes/clothes${num + 10}.jpg`} width="100%" />
+              <img src={`${process.env.PUBLIC_URL}/images/clothes/clothes${num + 10}.jpg`} width="100%" />
             </button>
             <h4>{clothes[num].title}</h4>
             <p>{clothes[num].content}</p>

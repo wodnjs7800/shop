@@ -20,11 +20,11 @@ function Detail() {
 
   return (
     <div className="detail">
-      <img src={`/images/bg/bg2.jpg`} className='main-bg'></img>
+      <img src={`${process.env.PUBLIC_URL}/images/bg/bg2.jpg`} className='main-bg'></img>
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <img src={`/images/${state.type}/${state.type}${id}.jpg`} width="100%" />
+            <img src={`${process.env.PUBLIC_URL}/images/${state.type}/${state.type}${id}.jpg`} width="100%" />
           </div>
           <div className="col-md-6">
             <div className="text">

@@ -14,7 +14,7 @@ function Cart() {
 
     return (
         <div className='cart'>
-            <img src={`/images/bg/bg2.jpg`} className='main-bg'></img>
+            <img src={`${process.env.PUBLIC_URL}/images/bg/bg2.jpg`} className='main-bg'></img>
             <Table>
                 <thead>
                     <tr>

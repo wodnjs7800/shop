@@ -16,6 +16,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/shop" element={<Main />} />
         <Route path="/clothes" element={<Clothes />} />
         <Route path="/shoes" element={<Shoes />} />
         <Route path="/detail/:id" element={<Detail />} />
@@ -24,7 +25,7 @@ function App() {
       </Routes>
       <Footer />
     </div>
-  );
+  )
 }
 
 export default App;

@@ -5,7 +5,7 @@ function Shoes() {
   let shoes = useSelector((state) => { return state.shoes })
   return (
     <div className="shoes">
-      <img src={`/images/bg/bg0.jpg`} className='main-bg'></img>
+      <img src={`${process.env.PUBLIC_URL}/images/bg/bg0.jpg`} className='main-bg'></img>
       <div className="container">
         <div className="row">
           {shoes.map(function (a, i) {
@@ -27,7 +27,7 @@ function Item(props) {
       <button onClick={() => {
         navigate(`/detail/${props.i}`, { state: { type: "shoes", num: props.num } })
       }}>
-        <img src={"/images/shoes/shoes" + props.i + ".jpg"} width="250px" height="250px" />
+        <img src={`${process.env.PUBLIC_URL}/images/shoes/shoes` + props.i + ".jpg"} width="250px" height="250px" />
       </button>
       <h4>{props.shoes.title}</h4>
       <p>{props.shoes.content}</p>
